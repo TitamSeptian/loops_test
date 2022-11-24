@@ -54,3 +54,4 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+Route::get('/subscribe', \App\Http\Livewire\Subcribe\Index::class)->name('subscribe.index');
